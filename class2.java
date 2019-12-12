@@ -1,13 +1,14 @@
 package corejava;
 import java.util.Scanner;
-public class class2 {
-	 String name;
-	 String address;
-	String ph;
-	String email;
-	String ptype;
-	String pid;
-	public class2(String name,String address,String ph,String email,String ptype,String pid)
+public class class2 
+ {
+   String name;
+   String address;
+   String ph;
+   String email;
+   String ptype;
+   String pid;
+   public class2(String name,String address,String ph,String email,String ptype,String pid)//Parameterised constructor
 	{
 		this.name=name;
 		this.address=address;
@@ -16,7 +17,7 @@ public class class2 {
 		this.ptype=ptype;
 		this.pid=pid;
 	}
-	public void register()
+	public void register()//method for registering
 	{
 		System.out.println("Thank you for registering.");
 		System.out.println("Name "+name);
@@ -29,23 +30,20 @@ public class class2 {
      public static void main(String[] args)
 	{
 		Scanner ob=new Scanner(System.in);
-		
 		System.out.println("Enter your name:");
 		String name=ob.next();
 		System.out.println("Enter your address:");
 		String address=ob.next();
 		System.out.println("Contact Number:");
-	    String ph=ob.next();
+	        String ph=ob.next();
 		System.out.println("Email ID:");
 		String email=ob.next();
 		System.out.println("Enter proof type:");
-	   String ptype=ob.next();
+	        String ptype=ob.next();
 		System.out.println("Enter proof id:");
 		String pid=ob.next();
-		class2 a=new class2(name,address,ph,email,ptype,pid);
-		a.register();
-		
-
+		class2 a=new class2(name,address,ph,email,ptype,pid);//calling constructor
+		a.register();//calling method
 		}
 	}
 
