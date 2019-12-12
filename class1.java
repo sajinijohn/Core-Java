@@ -1,18 +1,19 @@
 package corejava;
 import java.util.Scanner;
-public class class1 {
+public class class1
+ {                        // data members
 	String name;
 	String address;
 	String ph;
 	String email;
 	String ptype;
 	String pid;
-	public static void main(String[]args)
-	{
-		Scanner ob=new Scanner(System.in);
-		class1 a=new class1();
+ public static void main(String[]args)
+  {
+	Scanner ob=new Scanner(System.in);
+	class1 a=new class1();//creating object
 	System.out.println("Enter your name:");
-	 a.name=ob.next();
+	a.name=ob.next();
 	System.out.println("Enter your address:");
 	a.address=ob.next();
 	System.out.println("Contact Number:");
@@ -30,5 +31,5 @@ public class class1 {
 	System.out.println("email "+a.email);
 	System.out.println("proof type "+a.ptype);
 	System.out.println("proof id "+a.pid);
-	}
+   }
 }
