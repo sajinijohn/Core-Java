@@ -1,24 +1,25 @@
 package corejava;
- class area
-{
-	public void findarea(int side)
+class area
+ {
+    public void findarea(int side)
 	{
-		System.out.println("area of Square "+side*side);
+	  System.out.println("area of Square "+side*side);
 	}
-	public void findarea(int length,int breadth)
+    public void findarea(int length,int breadth)//find area in another form
 	{
-		System.out.println("area of Rectangle "+length*breadth);
+	   System.out.println("area of Rectangle "+length*breadth);
 	}
-	public void findarea(float base,int height)
+     public void findarea(float base,int height)//find area in another form
 	{
-		System.out.println("area of Triangle "+0.5*base*height);
+	    System.out.println("area of Triangle "+0.5*base*height);
 	}
-	public void findarea(int base,float height)
+      public void findarea(int base,float height)//find area in another form
 	{
-		System.out.println("area of Parallelogram"+base*height);
+            System.out.println("area of Parallelogram"+base*height);
 	}
-	}
-public class polymorphism {
+  }
+public class polymorphism
+ {
 	public static void main(String[]args)
 	{
 		area Area=new area();
