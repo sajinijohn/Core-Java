@@ -1,7 +1,7 @@
 package corejava;
 import java.util.Scanner;
 public class class1
- {                        // data members
+ {                       // data members
 	String name;
 	String address;
 	String ph;
