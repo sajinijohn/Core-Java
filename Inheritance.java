@@ -7,8 +7,9 @@ class A
 		int c=a+b;
 		System.out.println("Sum is"+c);
 	}
-	}
-public class Inheritance extends A {
+}
+public class Inheritance extends A 
+{
 	public void add(int a,int b)
 	{
 		int c=a+b+10;
