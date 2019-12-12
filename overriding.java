@@ -1,25 +1,28 @@
 package corejava;
 import java.util.Scanner;
-class animal{
+class animal//parent class
+ {
 	public void animalsound()
-	{
-		System.out.println("Different animal sound");
-	}
-}
-class Lion extends animal
-{
-	public void animalsound()
-	{
-		System.out.println("Lion rors");
-	}
-	}
-class cat extends animal
-{
-	public void animalsound()
-	{
-		System.out.println("cat mewos");
-	}
-}
+	 {
+	   System.out.println("Different animal sound");
+	 }
+ }
+//overriding
+class Lion extends animal//inherited class
+ {
+   public void animalsound()
+    {
+	System.out.println("Lion rors");
+     }
+ }
+//overriding
+class cat extends animal//inherited class
+ {
+   public void animalsound()
+    {
+	System.out.println("cat mewos");
+     }
+  }
 public class overriding {
 	public static void main(String[]args)
 	{
