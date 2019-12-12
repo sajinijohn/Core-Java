@@ -1,43 +1,41 @@
 package corejava;
-
 import java.util.Scanner;
-
-public class encapsulation {
+public class encapsulation 
+ {
 	String name;
-	 String address;
+	String address;
 	String ph;
 	String email;
 	String ptype;
 	String pid;
 	public static void main(String[] args)
-	{
+	 {
 		Scanner ob=new Scanner(System.in);
-		
 		System.out.println("Enter your name:");
 		String name=ob.next();
 		System.out.println("Enter your address:");
 		String address=ob.next();
 		System.out.println("Contact Number:");
-	    String ph=ob.next();
+	        String ph=ob.next();
 		System.out.println("Email ID:");
 		String email=ob.next();
 		System.out.println("Enter proof type:");
-	   String ptype=ob.next();
+	        String ptype=ob.next();
 		System.out.println("Enter proof id:");
 		String pid=ob.next();
-		class32 a=new class32();
-		a.setname(name);
+		class32 a=new class32();//object is created for the other class to use getter and setter methods
+		a.setname(name);//use set method updating the values
 		a.setadd(address);
 		a.setphone(ph);
 		a.setemail(email);
 		a.setprooft(ptype);
 		a.setproofid(pid);
-		System.out.println("Name "+a.getname());
+		System.out.println("Name "+a.getname());//using get method retrive the values
 		System.out.println("address "+a.getadd());
 		System.out.println("phone number "+a.getphone());
 		System.out.println("email "+a.getemail());
 		System.out.println("proof type "+a.getprooft());
 		System.out.println("proof id "+a.getproofid());
 		
-		}
+	}
 }
